@@ -1,2 +1,2 @@
-# desafio_dos
-# desafio2_css
+# Desafío 2 — CSS Avanzado Desafío Latam
+Grid 
