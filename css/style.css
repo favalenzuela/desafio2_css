@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 8% 1fr 8%;
+}
+
+header {
+    grid-area: header;
+    background-color: hwb(335 56% 23%);
+    padding: 15px 0px 15px 0px;
+}
+
+menu {
+    grid-area: menu;
+    background-color: rgb(218, 218, 218);
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(234, 234, 234);
+}
+
+footer {
+    grid-area: footer;
+    background-color: hwb(335 56% 23%);
+    padding: 20px 0px 20px 0px;
+}
+
+
+h1 {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.categories {
+    display:flex;
+    flex-direction:column;
+}
+
+.categories>strong{
+padding:20px;
+font-size:20px;
+}
+
+.categorie{
+    padding-left:20px;
+    line-height:150%;
+    font-size:15px;
+}
+
+.categorie>a{
+    text-decoration:none;
+    color:black;
+}
+
+.number {
+    color:rgb(197, 164, 184);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding:30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card>a {
+    text-decoration: none;
+    background-color: hwb(335 56% 23%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.card>h2 {
+    font-size:20px;
+    text-transform:uppercase;
+    padding:5px;
+}
+
+.footer-text{
+    font-size:15px;
+    text-align:center;
+    color:white;
+}
